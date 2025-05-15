@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+h2, h3 {
+    font-family: "Archivo", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-variation-settings:"wdth" 98.9;
+}
