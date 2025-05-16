@@ -1,0 +1,35 @@
+
+
+$blue-color: rgb(29, 155, 240);
+$blue-color-hover: rgb(26, 140, 216);
+$gray-color: rgb(113, 118, 123);
+$gray-color-hover: rgb(230, 230, 230);
+$dark-gray-color: rgb(83, 100, 113);
+$dark-gray-color-hover: rgb(29, 155, 240, 0.1);
+
+@mixin btn() {
+  padding: 0.75rem 0;
+  border-radius: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.btn-logo-text {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.auth-btn {
+  @include btn;
+
+  &:first-child {
+    margin-bottom: 1rem;
+  }
+
+  &:nth-of-type(2) {
+    &:hover {
+      background-color: $gray-color-hover;
+    }
+  }
+
+}
