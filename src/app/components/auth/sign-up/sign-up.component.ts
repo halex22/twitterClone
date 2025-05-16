@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,4 +10,9 @@ import { Component } from '@angular/core';
 })
 export class SignUpComponent {
 
+  router = inject(Router)
+
+  onClose(): void {
+    this.router.navigate(['/'])
+  }
 }

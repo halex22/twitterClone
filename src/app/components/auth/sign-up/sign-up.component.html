@@ -1,4 +1,4 @@
-<div class="close">
+<div class="close" (click)="onClose()">
   x
 </div>
 
@@ -13,8 +13,15 @@
 </div>
 <h3>Create your Account</h3>
 <form>
-  <input type="text">
-  <input type="email">
+  <div class="input-wrapper">
+    <label for="">Name</label>
+    <input type="text" >
+  </div>
+
+  <div class="input-wrapper">
+    <label for="">Email</label>
+    <input type="email" >
+  </div>
 
   <p>
     <strong style="display: block;">Date of birth</strong>
@@ -26,17 +33,17 @@
     <div class="date">
       <span>Month</span>
       <select name="" id="">
-        <option value="">option</option>
+        <option value=""></option>
       </select>
     </div>
 
     <div class="date">
-      <span>Month</span>
+      <span>Day</span>
       <select name="" id=""></select>
     </div>
 
     <div class="date">
-      <span>Month</span>
+      <span>Year</span>
       <select name="" id=""></select>
     </div>
 
