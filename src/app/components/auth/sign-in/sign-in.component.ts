@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { LayoutComponent } from '../layout/layout.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,5 +10,8 @@ import { LayoutComponent } from '../layout/layout.component';
   styleUrl: './sign-in.component.scss'
 })
 export class SignInComponent {
-
+  router = inject(Router)
+  onClose() {
+    this.router.navigate(['/'])
+  }
 }
