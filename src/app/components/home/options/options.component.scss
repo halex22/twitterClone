@@ -1,0 +1,43 @@
+$gray-color-hover : rgb(231, 233, 234, 0.1);
+$gray-color: rgb(113, 118, 123);
+// $dark-gray-color: rgb(231, 233, 233);
+
+
+:host {
+    border-right: 1px solid $gray-color;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-basis: auto;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+a {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $gray-color-hover;
+        border-radius: 1.5rem;
+    }
+}
+
+svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 1.5rem;
+
+    span {
+        font-weight: 800;
+    }
+}

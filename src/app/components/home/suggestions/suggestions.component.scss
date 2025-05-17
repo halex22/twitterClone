@@ -1,0 +1,53 @@
+$gray-color: rgb(113, 118, 123);
+$blue-color: rgb(29, 155, 240);
+$blue-color-hover: rgb(26, 140, 216);
+
+:host {
+  border-left: 1px solid $gray-color;
+
+  padding: 1rem;
+}
+
+@mixin card {
+    border: 1px solid $gray-color;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+}
+
+.search {
+
+    display: flex;
+    align-items: center;
+    @include card;
+
+  svg {
+    fill: $gray-color;
+    width: 1rem;
+  }
+
+  input {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+
+    &::placeholder {
+        color: white;
+    }
+  }
+}
+
+hgroup {
+    @include card;
+    margin-top: 1rem;
+    
+    button {
+        background-color: $blue-color;
+        color: white;
+        padding: 0.75rem;
+        border-radius: 1.25rem;
+
+        &:hover {
+            background-color: $blue-color-hover;
+        }
+    }
+}

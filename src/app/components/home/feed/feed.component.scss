@@ -1,0 +1,50 @@
+$gray-color: rgb(113, 118, 123);
+$blue-color: rgb(29, 155, 240);
+$blue-color-hover: rgb(26, 140, 216);
+
+header {
+    padding: 2rem 0 1.25rem 0;
+    display: flex;
+    justify-content: space-around;
+
+    border-bottom: 1px solid $gray-color;
+
+}
+
+.form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $gray-color;
+
+}
+
+.img-wrapper {
+
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
+}
+
+
+.options-container {
+    display: flex;
+}
+
+.svg-container {
+
+    margin-right: 1rem;
+
+    svg {
+        width: 1.5rem;
+        height: auto;
+        fill: $blue-color-hover;
+    }
+}
