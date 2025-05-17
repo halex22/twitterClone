@@ -1,11 +1,11 @@
-
-
-$blue-color: rgb(29, 155, 240);
-$blue-color-hover: rgb(26, 140, 216);
 $gray-color: rgb(113, 118, 123);
-$gray-color-hover: rgb(230, 230, 230);
+$gray-color-hover: rgb(239, 243, 244, 0.1);
 $dark-gray-color: rgb(83, 100, 113);
 $dark-gray-color-hover: rgb(29, 155, 240, 0.1);
+$light-gray-color-hover: rgb(215, 219, 220);
+
+$gray-color: rgb(51, 54, 57);
+$gray-text-color: rgb(133, 133, 133);
 
 @mixin btn() {
   padding: 0.75rem 0;
@@ -13,23 +13,116 @@ $dark-gray-color-hover: rgb(29, 155, 240, 0.1);
   font-size: 1.05rem;
 }
 
+.auth-btn {
+  @include btn;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+
+  span {
+    font-size: 1rem;
+  }
+
+  &:first-of-type {
+    margin-bottom: 1.25rem;
+  }
+}
+
+
 .btn-logo-text {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
 
-.auth-btn {
-  @include btn;
 
-  &:first-child {
-    margin-bottom: 1rem;
+
+
+
+.logo {
+  width: 1.25rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
+  border: 1px solid $gray-color;
+  padding: 1rem;
+  border-radius: 0.25rem;
+
+  label {
+    color: $gray-text-color;
+  }
+}
+
+
+.divider {
+  position: relative;
+  margin: 1rem 0;
+
+  hr {
+    border: none;
+    border-top: 1px solid $dark-gray-color;
   }
 
-  &:nth-of-type(2) {
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
+.btn {
+  border-radius: 1rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &:first-of-type {
+    margin-top: 2rem;
+    &:hover {
+      background-color: $light-gray-color-hover;
+    }
+  }
+
+  &:last-of-type {
+    background-color: inherit;
+    border: 1px solid $dark-gray-color;
+    color: white;
+
     &:hover {
       background-color: $gray-color-hover;
     }
   }
 
+  span {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+
+}
+
+.input-wrapper {
+  border: 1px solid $gray-color;
+  padding: 1rem;
+  border-radius: 0.25rem;
+
+  label {
+    color: $gray-text-color;
+  }
+}
+
+input {
+  background-color: transparent;
+  outline: none;
+  border: 0;
 }

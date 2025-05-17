@@ -12,6 +12,10 @@ $dark-gray-color-hover: rgb(29, 155, 240, 0.1);
 }
 
 
+:host {
+    height: 100dvh;
+}
+
 
 h2 {
   font-size: 4rem;
@@ -30,17 +34,15 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 1rem 0 0;
-  height: 100dvh;
+
   
   // backdrop-filter: blur(5px);
   
 }
 
 .filter {
-  // filter: brightness(0.25);
   background-color: rgba(136, 155, 182, 0.3);
   filter: invert(0.3);
-  // filter:  brightness(10%) invert(0.3);
 }
 
 .optns-wrapper {
@@ -147,14 +149,18 @@ a {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 1rem;
-
-  @media screen and (max-width: 1075px) {
-    position: relative;
-  }
+  margin-top: 2rem;
 }
+
+// footer {
+//   position: relative;
+//   bottom: 0;
+//   margin-bottom: 1rem;
+
+//   @media screen and (max-width: 1075px) {
+//     position: relative;
+//   }
+// }
 
 .foot-options {
   list-style-type: none;
