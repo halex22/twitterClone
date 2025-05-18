@@ -1,5 +1,3 @@
-<p>follow-list works!</p>
-
-<app-follow-card />
-<app-follow-card />
-<app-follow-card />
+@for (dummy of dummyData; track $index) {
+  <app-follow-card [followSuggestion]="dummy" />
+}

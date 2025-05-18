@@ -53,3 +53,23 @@ hgroup {
         }
     }
 }
+
+.fast-follow {
+  margin-top: 1rem;
+  padding: 1rem;
+  @include card;
+
+  span {
+    display: inline-block;
+
+    &:first-of-type {
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    &:last-of-type {
+      color: $blue-color;
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+$gray-color: rgb(113, 118, 123);
+
+:host {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 0.5rem 1rem;
+}
+
+.img-wrapper {
+    margin-right: 1rem;
+
+    img {
+        width: 2.5rem;
+        height: auto;
+    }
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-status {
+    display: flex;
+    align-items: center;
+
+
+    h5 {
+        margin: 0;
+    }
+
+    .svg-container {
+        svg {
+            width: 1.25rem;
+            height: auto;
+        }
+    }
+}
+
+.at {
+    color: $gray-color;
+}
+
+.btn-wrapper {
+
+    button {
+        border: 0;
+        padding: 0.5rem 1rem;
+        border-radius: 1.25rem;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+}

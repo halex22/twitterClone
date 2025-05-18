@@ -1,7 +1,10 @@
-export interface Follow {
-  img: string
+export interface FastFollow {
+  img?: string
   name: string
-  status: string
-  description: string
+  status?: string
   at: string
+}
+
+export interface Follow extends FastFollow {
+  description: string
 }

@@ -1,0 +1,12 @@
+  <ul>
+    @for (dummy of data; track $index) {
+    <li>
+      <div class="left img-container">
+        <img [src]="dummy.img" alt="">
+      </div>
+
+      <app-fast-follow [name]="dummy.name" [at]="dummy.at"/>
+    </li>
+    }
+
+  </ul>

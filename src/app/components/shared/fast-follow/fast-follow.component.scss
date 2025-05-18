@@ -1,0 +1,45 @@
+$gray-color: rgb(113, 118, 123);
+$gray-hover: rgb(215, 219, 220);
+
+:host {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.name-status {
+    display: flex;
+    align-items: center;
+}
+
+h5 {
+    margin: 0;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+svg {
+    margin-left: 0.25rem;
+    width: 1.25rem;
+    height: auto;
+}
+
+.at {
+    color: $gray-color;
+}
+
+button {
+    border: 0;
+    padding: 0.5rem 1rem;
+    border-radius: 1.25rem;
+
+    &:hover {
+        background-color: $gray-hover;
+    }
+
+    span {
+        font-weight: 700;
+    }
+}

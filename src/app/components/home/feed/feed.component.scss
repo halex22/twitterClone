@@ -1,4 +1,5 @@
 $gray-color: rgb(51, 54, 57);
+$gray-color-text: rgb(113, 118, 123);
 $blue-color: rgb(29, 155, 240);
 $blue-color-hover: rgb(26, 140, 216);
 
@@ -86,5 +87,23 @@ header {
     &:focus {
         border: 0;
         outline: 0;
+    }
+}
+
+
+.lower-line {
+    color: $gray-color-text;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+    }
+
+    svg {
+        fill: $gray-color-text;
+        width: 1rem;
     }
 }
