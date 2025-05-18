@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { FollowListComponent } from '../../shared/follow-list/follow-list.component';
 
 @Component({
   selector: 'app-feed',
   standalone: true,
-  imports: [],
+  imports: [FollowListComponent],
   templateUrl: './feed.component.html',
   styleUrl: './feed.component.scss'
 })
