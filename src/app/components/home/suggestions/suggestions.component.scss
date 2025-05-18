@@ -1,15 +1,16 @@
 $gray-color: rgb(113, 118, 123);
+$gray-dirty: rgb(51, 54, 57);
 $blue-color: rgb(29, 155, 240);
 $blue-color-hover: rgb(26, 140, 216);
 
 :host {
-  border-left: 1px solid $gray-color;
+  border-left: 1px solid $gray-dirty;
 
   padding: 1rem;
 }
 
 @mixin card {
-    border: 1px solid $gray-color;
+    border: 1px solid $gray-dirty;
     padding: 0.5rem;
     border-radius: 1.25rem;
 }
@@ -21,7 +22,7 @@ $blue-color-hover: rgb(26, 140, 216);
     @include card;
 
   svg {
-    fill: $gray-color;
+    fill: $gray-dirty;
     width: 1rem;
   }
 
@@ -45,6 +46,7 @@ hgroup {
         color: white;
         padding: 0.75rem;
         border-radius: 1.25rem;
+        border: none;
 
         &:hover {
             background-color: $blue-color-hover;

@@ -1,10 +1,11 @@
 $gray-color-hover : rgb(231, 233, 234, 0.1);
 $gray-color: rgb(113, 118, 123);
+$gray-dirty: rgb(51, 54, 57);
 // $dark-gray-color: rgb(231, 233, 233);
 
 
 :host {
-    border-right: 1px solid $gray-color;
+    border-right: 1px solid $gray-dirty;
     min-height: 100vh;
     padding: 2rem;
     display: flex;

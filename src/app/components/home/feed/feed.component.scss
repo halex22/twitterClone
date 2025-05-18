@@ -1,4 +1,4 @@
-$gray-color: rgb(113, 118, 123);
+$gray-color: rgb(51, 54, 57);
 $blue-color: rgb(29, 155, 240);
 $blue-color-hover: rgb(26, 140, 216);
 
@@ -40,11 +40,51 @@ header {
 
 .svg-container {
 
-    margin-right: 1rem;
+    // margin-right: 1rem;
+    padding: 0.4rem;
+
+    &:hover {
+        background-color: rgba(29, 155, 240, 0.1);
+        border-radius: 100%;
+    }
 
     svg {
         width: 1.5rem;
         height: auto;
         fill: $blue-color-hover;
+    }
+}
+
+.wrapper-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-btn {
+    display: flex;
+    align-items: center;
+
+    button {
+        border-radius: 1.25rem;
+        margin-right: 1rem;
+        padding: 0.5rem 1rem;
+        font-weight: 800;
+        border: none;
+    }
+}
+
+
+.new-tweet {
+    background-color: transparent;
+    border: 0;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    color: white;
+    width: 100%;
+
+
+    &:focus {
+        border: 0;
+        outline: 0;
     }
 }
