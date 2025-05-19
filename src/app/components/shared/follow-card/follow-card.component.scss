@@ -1,9 +1,12 @@
 $gray-color: rgb(113, 118, 123);
+$gray-color-border: rgb(51, 54, 57);
 
 :host {
     display: grid;
     grid-template-columns: 1fr 6fr;
     padding: 0.5rem 1rem;
+    border-bottom: 1px solid $gray-color-border;
+    
 }
 
 .img-wrapper {

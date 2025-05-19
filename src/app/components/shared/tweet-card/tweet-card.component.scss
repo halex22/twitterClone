@@ -1,0 +1,91 @@
+$gray-color: rgb(51, 54, 57);
+$gray-color-text: rgb(113, 118, 123);
+$blue-color: rgb(29, 155, 240);
+$blue-color-hover: rgb(26, 140, 216);
+$blue-bg: rgb(26, 140, 216, 0.1);
+
+$green: rgb(0, 186, 124);
+$green-bg: rgb(0, 186, 124, 0.1);
+
+$red: rgb(249, 24, 128);
+$red-bg: rgb(249, 24, 128, 0.1);
+
+@mixin hb($color, $bg) {
+
+  &:hover {
+    color: $color;
+
+    svg {
+      background-color: $bg;
+      border-radius: 100%;
+      fill: $color;
+    }
+  }
+
+}
+
+.img-wrapper {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+  }
+}
+
+.lower-line {
+  color: $gray-color-text;
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  svg {
+    fill: $gray-color-text;
+    width: 1rem;
+  }
+}
+
+
+:host {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  border-bottom: 1px solid $gray-color;
+  padding-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+.lower-line {
+  padding: 0 1rem;
+}
+
+.user-and-date {
+  color: $gray-color-text;
+}
+
+.comments,
+.stats,
+.save-share {
+  @include hb($blue-color, $blue-bg)
+}
+
+.retweets {
+  @include hb($green, $green-bg)
+}
+
+.likes {
+  @include hb($red, $red-bg)
+}
+
+app-follow-list {
+  border-bottom: 1px solid $gray-color;
+  padding-bottom: 1rem;
+}
